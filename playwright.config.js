@@ -2,6 +2,9 @@
 const { defineConfig, devices } = require('@playwright/test');
 
 
+export default defineConfig({
+  globalTimeout: 10 * 60 * 1000,
+});
 
 /**
  * @see https://playwright.dev/docs/test-configuration
