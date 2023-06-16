@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --headed ",
-    "test:reporter": "npx playwright test --headed --reporter= allure-playwight",
-    "allure-report":"npx allure generate./allure-results && allure open"
+    "test:reporter": "npx allure generate ./allure-results --clean",
+    "allure-report":"npx allure open ./allure-report"
   },
   "keywords": [],
   "author": "",
